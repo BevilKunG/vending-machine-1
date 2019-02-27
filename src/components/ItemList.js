@@ -1,6 +1,7 @@
 import React,{ Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchItems,resetBalance,refundChanges,setLabel } from '../actions'
+import ReactLoading from 'react-loading'
 
 export const OUT_OF_STOCK = 'Out of stock'
 export const NOT_ENOUGH_MONEY = 'Not enough money, please insert some coins'
@@ -51,32 +52,36 @@ class ItemList extends Component {
 
 
   renderItems(){
-    return this.props.items.map(item => (
-      <div
-        key={item.id}
-        className="card"
-        onClick={() => this.onItemClick(item)}>
+    if(!this.props.items){
+      return <ReactLoading type="spin" color="#767676" />
+    }else{
+      return this.props.items.map(item => (
+        <div
+          key={item.id}
+          className="card"
+          onClick={() => this.onItemClick(item)}>
 
-        <div className="image">
-          <img src={item.image} alt="img not found"/>
-        </div>
-
-        <div className="content">
-          <div className="center aligned header">
-            {item.name}
+          <div className="image">
+            <img src={item.image} alt="img not found"/>
           </div>
 
-          <div className="center aligned">
-            price: {item.price}
+          <div className="content">
+            <div className="center aligned header">
+              {item.name}
+            </div>
+
+            <div className="center aligned">
+              price: {item.price}
+            </div>
           </div>
-        </div>
 
-        <div className="extra content">
-          <div className={`ui inverted ${this.checkItemStatus(item)} segment`}></div>
-        </div>
+          <div className="extra content">
+            <div className={`ui inverted ${this.checkItemStatus(item)} segment`}></div>
+          </div>
 
-      </div>
-    ))
+        </div>
+      ))
+    }
   }
 
   render(){
@@ -85,7 +90,7 @@ class ItemList extends Component {
         <div className="ui basic segment">
           <div className="ui center aligned header">Select Item</div>
         </div>
-        
+
         <div className="ui centered cards">
           {this.renderItems()}
         </div>
