@@ -11,7 +11,7 @@ const App = () => {
     <div className="ui container">
       <BalanceBar/>
       <div style={style}>
-      <ItemList/>
+        <ItemList/>
       </div>
       <div className="ui bottom fixed two item menu">
         <InsertCoin/>

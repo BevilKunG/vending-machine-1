@@ -4,8 +4,10 @@ import { increaseBalance,setLabel,refundChanges } from '../actions'
 
 class InsertCoin extends Component {
   onCoinInsert(coin){
+    //Reset Label and Changes
     this.props.setLabel('')
     this.props.refundChanges([0,0,0,0])
+    //
     this.props.increaseBalance(coin)
   }
 

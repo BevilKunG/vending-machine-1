@@ -10,7 +10,7 @@ class ChangesBar extends Component {
   render(){
     return (
       <div className="ui center aligned segment">
-      {this.renderChangesBar()}
+        {this.renderChangesBar()}
       </div>
     )
   }

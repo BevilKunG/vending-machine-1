@@ -8,11 +8,9 @@ const BalanceBar = (props) => {
     </div>
   )
 }
-// <div className="ui clearing basic segment">
-//   <div className="ui right floated compact segment">{`Balance: ฿ ${props.balance}`}</div>
-// </div>
-const mapStateToProps = ({balance}) => {
-  return {balance}
+
+const mapStateToProps = ({ balance }) => {
+  return { balance }
 }
 
 export default connect(mapStateToProps)(BalanceBar)

@@ -35,6 +35,7 @@ class ChangesMenu extends Component {
             <div className={`ui ${this.checkLabel(this.props.label)} message`}>{ this.props.label }</div>
             <ChangesBar/>
         </div>
+        
         <div className={`ui teal right floated ${this.props.balance===0?'disabled':''} button`} onClick={this.onRefundClick}>Refund</div>
       </div>
     )
