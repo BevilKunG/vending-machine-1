@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { fetchItems,resetBalance,refundChanges,setLabel } from '../actions'
 
 export const OUT_OF_STOCK = 'Out of stock'
-export const NOT_ENOUGH_MONEY = 'Not enough money'
+export const NOT_ENOUGH_MONEY = 'Not enough money, please insert some coins'
 
 class ItemList extends Component {
 
