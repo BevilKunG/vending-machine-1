@@ -16,6 +16,7 @@
   background: 	#ff7878;
 }
 
+/*  Hard code Responsive - message*/
 @media screen and (max-width:1600px){
   .ui.message{
     width:250px;
@@ -28,6 +29,24 @@
   }
 }
 
+/*  Hard code Responsive - space bottom*/
+@media screen and (max-width:1600px){
+  .space.bottom{
+    margin-bottom: 20%;
+  }
+}
+
+@media (max-width:980px){
+  .space.bottom{
+    margin-bottom: 25%;
+  }
+}
+
+@media (max-width:650px){
+  .space.bottom{
+    margin-bottom: 40%;
+  }
+}
 
 body{
   font-family: 'Kanit', sans-serif;

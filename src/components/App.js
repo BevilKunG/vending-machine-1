@@ -6,11 +6,11 @@ import ItemList from './ItemList'
 import './App.css'
 
 const App = () => {
-  const style = { marginBottom:'20%' }
+  // const style = { marginBottom:'20%' }
   return (
     <div className="ui container">
       <BalanceBar/>
-      <div style={style}>
+      <div className="space bottom">
         <ItemList/>
       </div>
       <div className="ui bottom fixed two item menu">
