@@ -1,0 +1,5 @@
+export const INCREASE_BALANCE = 'INCREASE_BALANCE'
+export const RESET_BALANCE = 'RESET_BALANCE'
+export const REFUND_CHANGES = 'REFUND_CHANGES'
+export const FETCH_ITEMS = 'FETCH_ITEMS'
+export const SET_LABEL = 'SET_LABEL'

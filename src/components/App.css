@@ -1,0 +1,25 @@
+.ui.centered.cards>div.card:hover{
+  box-shadow: 0 4px 8px 0 rgba(255,120,120, 0.5), 0 6px 20px 0 rgba(255,120,120, 0.59);
+  transform: translateY(-5px);
+
+}
+
+.ui.centered.cards>div.card:active{
+  transform: translateY(2px);
+}
+
+.card{
+  user-select: none;
+}
+
+.ui.bottom.fixed.menu{
+  background: 	#ff7878;
+}
+
+.ui.message{
+  width:250px;
+}
+
+body{
+  font-family: 'Kanit', sans-serif;
+}
