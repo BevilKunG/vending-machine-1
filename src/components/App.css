@@ -16,9 +16,15 @@
   background: 	#ff7878;
 }
 
-@media screen and (max-width:300px){
+@media screen and (max-width:1600px){
   .ui.message{
     width:250px;
+  }
+}
+
+@media (max-width:680px){
+  .ui.message{
+    width:100px;
   }
 }
 
