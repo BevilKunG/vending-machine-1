@@ -22,7 +22,7 @@ export const refundChanges = (refundCoins) => {
 }
 
 export const fetchItems = () => async dispatch => {
-  const res = await axios.get('http://www.mocky.io/v2/5c4982d83200004b000b588c')
+  const res = await axios.get('https://www.mocky.io/v2/5c4982d83200004b000b588c')
   return dispatch({
     type:FETCH_ITEMS,
     payload:res.data
