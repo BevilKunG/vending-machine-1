@@ -6,7 +6,7 @@ import ChangesBar from './ChangesBar'
 
 class ChangesMenu extends Component {
   onRefundClick = () => {
-    const coins = [10,5,2,1]
+    const coins = [20,10,5,2,1]
     let balance = this.props.balance
 
     const refundCoins = coins.map(coin => {
@@ -35,7 +35,7 @@ class ChangesMenu extends Component {
             <div className={`ui ${this.checkLabel(this.props.label)} message`}>{ this.props.label }</div>
             <ChangesBar/>
         </div>
-        
+
         <div className={`ui teal right floated ${this.props.balance===0?'disabled':''} button`} onClick={this.onRefundClick}>Refund</div>
       </div>
     )

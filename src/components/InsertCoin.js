@@ -21,6 +21,7 @@ class InsertCoin extends Component {
             <div className="ui yellow button" onClick={() => this.onCoinInsert(2)}>฿2</div>
             <div className="ui yellow button" onClick={() => this.onCoinInsert(5)}>฿5</div>
             <div className="ui yellow button" onClick={() => this.onCoinInsert(10)}>฿10</div>
+            <div className="ui yellow button" onClick={() => this.onCoinInsert(20)}>฿20</div>
           </div>
         </div>
       </div>
